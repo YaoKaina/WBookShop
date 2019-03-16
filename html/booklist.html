@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>图书列表</title>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/booklist.css">
+</head>
+
+<body>
+    <!--导航条-->
+    <div class="col-md-12 col-xs-12 list">
+        <nav class="navbar navbar-default navlist">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                        <p>WBookShop</p>
+                    </a>
+
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">查看分类<span class="caret"></span></a>              	
+                            <ul class="dropdown-menu">
+                                <li><a href="#">文学赏析</a></li>
+                                <li><a href="#">悬疑推理</a></li>
+                                <li><a href="#">教辅</a></li>
+                                <li><a href="#">古代文学</a></li>
+                                <li><a href="#">国外名著</a></li>
+                                <li><a href="#">人如传记</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="booklist.html">更多</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="navbar-form navbar-left">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="请输入：书名or作者">
+                        </div>
+                        <button type="submit" class="btn btn-default btnInput">查询</button>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right navmore">
+                    	<li>
+                            <a href="goods.html" style="color:red;font-size: 1.2em;">我的订单</a>
+                        </li>
+                    	<li>
+                            <a href="#">
+                            	<input type="file" id="fileInput" style="display:none;">
+								<input id="img-upload" type="button"  accept="application/msword,text/plain" onclick="showFileInput()" value="投稿" >
+                            </a>
+                        </li>
+                        <li>
+                            <a href="login.html" style="color:rgb(39,40,34);font-size: 1.2em;">登录</a>
+                        </li>
+                        <li>
+                            <a href="register.html" style="color:rgb(39,40,34);font-size: 1.2em;">注册</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+        <div class="text">
+            为学之道，莫先于穷理；穷理之要，必先于读书。 —— 朱熹
+        </div>
+    </div>
+    <div class="container">
+        <div>
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs firstmenu" role="tablist">
+                <li role="presentation" class="active"><a href="#masterwork" aria-controls="masterwork" role="tab" data-toggle="tab">文学作品</a></li>
+                <li role="presentation"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">教辅</a></li>
+                <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">心理学</a></li>
+                <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">小说</a></li>
+                <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">传记</a></li>
+                <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">经济学</a></li>
+                <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">医学</a></li>
+                <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">中国古代文学</a></li>
+                <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">心理学</a></li>
+                <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">悬疑推理</a></li>
+                <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">国外名著</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="masterwork">
+                    <div class="row lists">
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/world.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3>人间词话</h3>
+                                    <p>￥23.50</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/DiTan.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3>我与地坛</h3>
+                                    <p>￥20.00</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/Nile.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3>尼罗河上的惨案</h3>
+                                    <p>￥26.20</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/star.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3>人类群星闪耀时</h3>
+                                    <p>42.00</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/world.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3>人间词话</h3>
+                                    <p>￥23.50</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/DiTan.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3>我与地坛</h3>
+                                    <p>￥20.00</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/Nile.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3>尼罗河上的惨案</h3>
+                                    <p>￥26.20</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/star.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3>人类群星闪耀时</h3>
+                                    <p>42.00</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/world.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3>人间词话</h3>
+                                    <p>￥23.50</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/DiTan.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3>我与地坛</h3>
+                                    <p>￥20.00</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/Nile.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3>尼罗河上的惨案</h3>
+                                    <p>￥26.20</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/star.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3>人类群星闪耀时</h3>
+                                    <p>42.00</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div role="tabpanel" class="tab-pane" id="home">
+
+                    <div class="row lists">
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/textbook.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3>教材解读</h3>
+                                    <p>￥28.60</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/5-3.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3>曲一线53中/高考</h3>
+                                    <p>￥55.00</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/spark.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3>巅峰训练 星火英语</h3>
+                                    <p>￥20.60</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/dic.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3>英语高考必备</h3>
+                                    <p>32</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/textbook.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3>教材解读</h3>
+                                    <p>￥28.60</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/5-3.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3>曲一线53中/高考</h3>
+                                    <p>￥55.00</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/spark.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3>巅峰训练 星火英语</h3>
+                                    <p>￥20.60</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/dic.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3>英语高考必备</h3>
+                                    <p>32</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/textbook.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3>教材解读</h3>
+                                    <p>￥28.60</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/5-3.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3>曲一线53中/高考</h3>
+                                    <p>￥55.00</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/spark.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3>巅峰训练 星火英语</h3>
+                                    <p>￥20.60</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/dic.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3>英语高考必备</h3>
+                                    <p>32</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/textbook.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3>教材解读</h3>
+                                    <p>￥28.60</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/5-3.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3>曲一线53中/高考</h3>
+                                    <p>￥55.00</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/spark.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3>巅峰训练 星火英语</h3>
+                                    <p>￥20.60</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/dic.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3>英语高考必备</h3>
+                                    <p>32</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div role="tabpanel" class="tab-pane" id="profile">
+                    <div class="row  lists">
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/Psychology1.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3>偏执狂</h3>
+                                    <p>￥51.00</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/Psychology2.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3>心理吴越</h3>
+                                    <p>￥82.60</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/Psychology3.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3>心理学的历史与体系</h3>
+                                    <p>43.5</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/Psychology4.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3>心理突破</h3>
+                                    <p>67.90</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/Psychology1.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3>偏执狂</h3>
+                                    <p>￥51.00</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/Psychology2.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3>心理吴越</h3>
+                                    <p>￥82.60</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/Psychology3.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3>心理学的历史与体系</h3>
+                                    <p>43.5</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/Psychology4.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3>心理突破</h3>
+                                    <p>67.90</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/Psychology1.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3>偏执狂</h3>
+                                    <p>￥51.00</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/Psychology2.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3>心理吴越</h3>
+                                    <p>￥82.60</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/Psychology3.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3>心理学的历史与体系</h3>
+                                    <p>43.5</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/Psychology4.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3>心理突破</h3>
+                                    <p>67.90</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div role="tabpanel" class="tab-pane" id="messages">
+                    <div class="row  lists">
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/Psychology.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3>心理罪</h3>
+                                    <p>￥143.90</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/nopeo.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3>无人生还</h3>
+                                    <p>￥31.60</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/Changan.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3>长安十二时辰</h3>
+                                    <p>￥75.60</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/dear-poor.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3>富爸爸 穷爸爸</h3>
+                                    <p>￥37.90</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/Psychology.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3>心理罪</h3>
+                                    <p>￥143.90</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/nopeo.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3>无人生还</h3>
+                                    <p>￥31.60</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/Changan.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3>长安十二时辰</h3>
+                                    <p>￥75.60</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/dear-poor.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3>富爸爸 穷爸爸</h3>
+                                    <p>￥37.90</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/Psychology.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3>心理罪</h3>
+                                    <p>￥143.90</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/nopeo.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3>无人生还</h3>
+                                    <p>￥31.60</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/Changan.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3>长安十二时辰</h3>
+                                    <p>￥75.60</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/dear-poor.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3>富爸爸 穷爸爸</h3>
+                                    <p>￥37.90</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div role="tabpanel" class="tab-pane" id="settings">
+                    <div class="row  lists">
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/zhong.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3> 经典畅销人物传记合集</h3>
+                                    <p>￥124.40</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/laite.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3>世界名人传记</h3>
+                                    <p>￥144.90</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/zhang.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3>白落梅签名典藏传记</h3>
+                                    <p>￥157.70</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/zeng.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3>曾国藩</h3>
+                                    <p>￥150.40</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/zhong.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3> 经典畅销人物传记合集</h3>
+                                    <p>￥124.40</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/laite.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3>世界名人传记</h3>
+                                    <p>￥144.90</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/zhang.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3>白落梅签名典藏传记</h3>
+                                    <p>￥157.70</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/zeng.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3>曾国藩</h3>
+                                    <p>￥150.40</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/zhong.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3> 经典畅销人物传记合集</h3>
+                                    <p>￥124.40</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/laite.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3>世界名人传记</h3>
+                                    <p>￥144.90</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/zhang.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3>白落梅签名典藏传记</h3>
+                                    <p>￥157.70</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="thumbnail">
+                                <a href="bookdetail.html"><img src="../photo/zeng.jpg" alt="..."></a>
+                                <div class="caption">
+                                    <h3>曾国藩</h3>
+                                    <p>￥150.40</p>
+                                    <p>
+                                        <a href="#" class="btn btn-primary collect" role="button">收藏</a>
+                                        <a href="#" class="btn btn-default add" role="button">加入购物车</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="col-md-12 last">
+        <div class="row">
+            <div class="col-md-2 col-xs-6">
+                <ul class="list-unstyled">
+                    <li style="font-size:1.2em;color:rgb(248,248,242,0.8)">购物指南</li>
+                    <li><a href="#">购物流程</a></li>
+                    <li><a href="#">发票制度</a></li>
+                    <li><a href="#">账户管理</a></li>
+                    <li><a href="#">会员优惠</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-xs-6">
+                <ul class="list-unstyled">
+                    <li style="font-size:1.2em;color:rgb(248,248,242,0.8)">支付方式</li>
+                    <li><a href="#">货到付款</a></li>
+                    <li><a href="#">网上支付</a></li>
+                    <li><a href="#">礼品卡支付</a></li>
+                    <li><a href="#">银行转帐</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-xs-6">
+                <ul class="list-unstyled">
+                    <li style="font-size:1.2em;color:rgb(248,248,242,0.8)">订单服务</li>
+                    <li><a href="#">订单配送查询</a></li>
+                    <li><a href="#">订单状态说明</a></li>
+                    <li><a href="#">自助取消订单</a></li>
+                    <li><a href="#">自助修改订单</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-xs-6">
+                <ul class="list-unstyled">
+                    <li style="font-size:1.2em;color:rgb(248,248,242,0.8)">配送方式</li>
+                    <li><a href="#">配送范围及免邮标准</a></li>
+                    <li><a href="#">当日递/次日达</a></li>
+                    <li><a href="#">订单自提</a></li>
+                    <li><a href="#">验货与签收</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-xs-6">
+                <ul class="list-unstyled">
+                    <li style="font-size:1.2em;color:rgb(248,248,242,0.8)">退换货</li>
+                    <li><a href="#">退换货政策</a></li>
+                    <li><a href="#">自助申请退换货</a></li>
+                    <li><a href="#">退换货进度查询</a></li>
+                    <li><a href="#">退款方式和时间</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-xs-6">
+                <ul class="list-unstyled">
+                    <li style="font-size:1.2em;color:rgb(248,248,242,0.8)">退换货</li>
+                    <li><a href="#">商家中心</a></li>
+                    <li><a href="#">运营服务</a></li>
+                    <li><a href="#">加入尾品汇</a></li>
+                </ul>
+            </div>
+        </div>
+		<div align="center" style="padding-top:20px;color:rgb(248,248,242,0.8)">
+			版权所有 © 2018 xatu w书城    瑞诺杯网页设计whale小组
+		</div>
+    </div>
+
+</body>
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script>
+    var wid = $(".lists img").width();
+    var term = 16 / 14;
+    var hei = $(".lists img").width() * term;
+    $(".lists img").css({
+        "width": wid,
+        "height": hei
+    });
+</script>
+
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>图书信息</title>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bookdetail.css">
+</head>
+
+<body>
+    <!--导航条-->
+    <div class="col-md-12 col-xs-12 list">
+        <nav class="navbar navbar-default navlist">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                        <p>WBookShop</p>
+                    </a>
+
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">查看分类<span class="caret"></span></a>              	
+                            <ul class="dropdown-menu">
+                                <li><a href="#">文学赏析</a></li>
+                                <li><a href="#">悬疑推理</a></li>
+                                <li><a href="#">教辅</a></li>
+                                <li><a href="#">古代文学</a></li>
+                                <li><a href="#">国外名著</a></li>
+                                <li><a href="#">人如传记</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="booklist.html">更多</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="navbar-form navbar-left">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="书籍名">
+                        </div>
+                        <button type="submit" class="btn btn-default btnInput">查询</button>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right navmore">
+                    	<li>
+                            <a href="goods.html" style="color:red;font-size: 1.2em;">我的订单</a>
+                        </li>
+                    	<li>
+                            <a href="#">
+                            	<input type="file" id="fileInput" style="display:none;">
+								<input id="img-upload" type="button"  accept="application/msword,text/plain" onclick="showFileInput()" value="投稿" >
+                            </a>
+                        </li>
+                        <li>
+                            <a href="login.html" style="color:rgb(39,40,34);font-size: 1.2em;">登录</a>
+                        </li>
+                        <li>
+                            <a href="register.html" style="color:rgb(39,40,34);font-size: 1.2em;">注册</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+        <div class="text">
+            读书之法，在循序而渐进，熟读而精思。 —— 朱熹
+        </div>
+    </div>
+    <div class="container">
+        <div class="col-md-12 col-xs-12 ">
+            <div class="col-md-5 col-xs-5 detailImg">
+                <div class="thumbnail">
+                    <img src="../photo/bookname.jpg" alt="...">
+                    <div class="caption">
+                        <h3>&nbsp &nbsp长安十二时辰</h3>
+                        <p>&nbsp &nbsp &nbsp &nbsp
+                            <a href="#" class="btn btn-primary" role="button" id="collect">收藏</a>
+                            <a href="#" class="btn btn-default" role="button" id="add">加入购物车</a>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-7 col-xs-7 detailText">
+                <h2> 长安十二时辰（书名）</h2>
+                <font>&nbsp《长安十二时辰》是2017年1月湖南文艺出版社出版发行的图书，作者是马伯庸。[1] 讲述了突厥狼卫在一个夜晚潜入了长安城，最终主人公破解阴谋，拯救苍生的故事。</font><br/>
+                <p>图书简介</p>
+                <font>&nbsp 文字鬼才马伯庸最新长篇
+                    <br/> &nbsp 突破真实与虚构界限
+                    <br/> &nbsp 打造令人窒息的历史悬疑巨制
+                    <br/> &nbsp 揭秘不为人知的十二时辰
+                    <br/></font>
+                <p>灵感来源</p>
+                <font>&nbsp 《长安十二时辰》的诞生，最初源自于知乎上的一个问答「如果你来给《刺客信条》写剧情，你会把背景设定在哪里？」。有网友针对一款热门电脑游戏的背景提问，马伯庸便开了一个“脑洞”，信手写了一段游戏剧本:“俯瞰长安城，一百零八坊如棋盘般排布，晴空之上一头雄鹰飞过”这段带着强烈互动感的“同人文”，最后成了《长安十二时辰》开头的雏形。小说写的是唐天宝三载，上元节当日的帝都长安。在一派歌舞升平的繁华盛景中，一群偷偷潜入的突厥狼卫酝酿着灭城的阴谋。只有一个死囚犯能挽救长安，时限为十二个时辰。从目录开始，整部小说就被上紧了发条。总共24章，一章只写半个时辰，章章都像在倒计报时。与强烈的时间提示相对应的是，几乎每一章的末尾，都附有一张唐朝.....</font>
+                <p>内容简介</p>
+                <font>&nbsp 唐天宝三年，元月十四日，长安。大唐皇都的居民不知道，上元节辉煌灯火亮起之时，等待他们的，将是场吞噬一切的劫难。突厥、狼卫、绑架、暗杀、烈焰、焚城，毁灭长安城的齿轮已经开始转动。而拯救长安的全部希望，只有一个即将被斩首的独眼死囚和短短的十二个时辰……</font><br/>
+                <p>作者简介</p>
+                <font>&nbsp马伯庸&nbsp 作家。人民文学奖、朱自清散文奖得主，有“文字鬼才”之誉。被评为沿袭“‘五四’以来历史文学创作的谱系”，“文字风格充满奇趣”。
+                    <br/>&nbsp代表作《古董局中局》入选第四届“中国图书势力榜”文学类年度十大好书。
+                    <br/></font>
+                <p>目录</p>
+                <font>&nbsp第一章 巳正  无数黑骑在远处来回驰骋...<br/>&nbsp第二章 午初  这两匹马你追我赶，在坊里的街道上奔驰...<br/>&nbsp第三章 午正  未见其景，一番华丽繁盛的景象已...<br/>&nbsp第四章 未初  曲江池内水道蜿蜒，楼宇林立，花卉周环...<br/>&nbsp第五章 未正  木盒打开后，左边是一个...<br/>&nbsp第六章 申初 ...<br/>&nbsp第七章 申正 ...<br/>&nbsp第八章 酉初 ...<br/>&nbsp第九章 酉正 ...<br/>&nbsp......<br/></font>
+            </div>
+        </div>
+    </div>
+	<div class="col-md-12 last">
+        <div class="row">
+            <div class="col-md-2 col-xs-6">
+                <ul class="list-unstyled">
+                    <li style="font-size:1.2em;color:rgb(248,248,242,0.8)">购物指南</li>
+                    <li><a href="#">购物流程</a></li>
+                    <li><a href="#">发票制度</a></li>
+                    <li><a href="#">账户管理</a></li>
+                    <li><a href="#">会员优惠</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-xs-6">
+                <ul class="list-unstyled">
+                    <li style="font-size:1.2em;color:rgb(248,248,242,0.8)">支付方式</li>
+                    <li><a href="#">货到付款</a></li>
+                    <li><a href="#">网上支付</a></li>
+                    <li><a href="#">礼品卡支付</a></li>
+                    <li><a href="#">银行转帐</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-xs-6">
+                <ul class="list-unstyled">
+                    <li style="font-size:1.2em;color:rgb(248,248,242,0.8)">订单服务</li>
+                    <li><a href="#">订单配送查询</a></li>
+                    <li><a href="#">订单状态说明</a></li>
+                    <li><a href="#">自助取消订单</a></li>
+                    <li><a href="#">自助修改订单</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-xs-6">
+                <ul class="list-unstyled">
+                    <li style="font-size:1.2em;color:rgb(248,248,242,0.8)">配送方式</li>
+                    <li><a href="#">配送范围及免邮标准</a></li>
+                    <li><a href="#">当日递/次日达</a></li>
+                    <li><a href="#">订单自提</a></li>
+                    <li><a href="#">验货与签收</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-xs-6">
+                <ul class="list-unstyled">
+                    <li style="font-size:1.2em;color:rgb(248,248,242,0.8)">退换货</li>
+                    <li><a href="#">退换货政策</a></li>
+                    <li><a href="#">自助申请退换货</a></li>
+                    <li><a href="#">退换货进度查询</a></li>
+                    <li><a href="#">退款方式和时间</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-xs-6">
+                <ul class="list-unstyled">
+                    <li style="font-size:1.2em;color:rgb(248,248,242,0.8)">退换货</li>
+                    <li><a href="#">商家中心</a></li>
+                    <li><a href="#">运营服务</a></li>
+                    <li><a href="#">加入尾品汇</a></li>
+                </ul>
+            </div>
+        </div>
+		<div align="center" style="padding-top:20px;color:rgb(248,248,242,0.8)">
+			版权所有 © 2018 xatu w书城    瑞诺杯网页设计whale小组
+		</div>
+    </div>
+	
+</body>
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+</html>

@@ -1,0 +1,125 @@
+a:hover {
+    text-decoration: none;
+}
+.thumbnail img:hover{
+	transform:scale(1.2);
+	transition: all 0.5s ease-in;
+}
+body {
+    margin-bottom: 10%;
+}
+
+#img-upload{
+	border:none;
+	background-color:rgba(41,97,144,0.5);
+	font-size: 1.5em;
+	padding-top:0.2em;
+	padding-bottom:0.2em;
+	color:white;
+	border-radius:25px;
+}
+
+.list {
+    background: rgba(238, 236, 233);
+    background-image: url("../photo/1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 13%;
+    padding-right: 13%;
+    margin-bottom: 4%;
+}
+
+.navlist {
+    background: rgba(255, 255, 255, 0.7) none repeat scroll !important;
+    color: #081C74;
+    border: none;
+}
+
+.form-control,
+.btnInput {
+    background: rgba(255, 255, 255, 0.2) none repeat scroll !important;
+    color: #000000;
+    border: 1px solid rgb(115,152,183,0.9);
+}
+
+.navmore {
+    font-size: 0.7em;
+}
+
+.text {
+    /* border: 1px solid red;*/
+    font-size: 1.3em;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    color: white;
+    letter-spacing: 0.5em;
+    font-family: KaiTi;
+    text-align: center;
+    line-height: CENTER;
+}
+
+.detailImg {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.detailImg h3 {
+    font-family: KaiTi;
+}
+
+#collect {
+    background: rgb(77, 175, 192);
+    margin-right: 5%;
+    margin-top: 5%;
+}
+
+#add {
+    background: rgb(228, 143, 17);
+    color: white;
+    margin-top: 5%;
+}
+
+.detailText {
+    padding-top: 1%;
+    padding-left: 5%;
+    font-family: STSong;
+}
+
+.detailText h2 {
+    font-family: KaiTi;
+    margin-bottom: 2%;
+    border-left: 5px solid rgb(228, 143, 17);
+    border-bottom: 5px solid rgb(228, 143, 17);
+    font-weight: bold;
+}
+
+.detailText p {
+    margin-top: 4%;
+    font-size: 1.5em;
+    font-family: FangSong;
+    border-left: 5px solid rgb(77, 175, 192);
+    color: rgb(77, 175, 192);
+    font-weight: bold;
+}
+
+.detailText font {
+    font-size: 1.2em;
+    line-height: 1.5em;
+    letter-spacing: 0.2em;
+    word-spacing: 1em;
+}
+.last {
+    border-top: 5px solid rgb(107, 146, 182);
+    padding-left: 13%;
+    padding-right: 13%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: rgb(73,72,62);
+    margin-top:2%;
+}
+
+.last a {
+	font-size: 0.8em;
+    color: rgb(248,248,242,0.5);
+    
+}

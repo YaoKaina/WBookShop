@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>订单管理</title>
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/booklist.css">
+</head>
+
+<body>
+    <!--导航条-->
+    <div class="col-md-12 col-xs-12 list">
+        <nav class="navbar navbar-default navlist">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="index.html">
+                        <p>WBookShop</p>
+                    </a>
+
+                </div>
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">查看分类<span class="caret"></span></a>              	
+                            <ul class="dropdown-menu">
+                                <li><a href="#">文学赏析</a></li>
+                                <li><a href="#">悬疑推理</a></li>
+                                <li><a href="#">教辅</a></li>
+                                <li><a href="#">古代文学</a></li>
+                                <li><a href="#">国外名著</a></li>
+                                <li><a href="#">人如传记</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="booklist.html">更多</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="navbar-form navbar-left">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="请输入：书名or作者">
+                        </div>
+                        <button type="submit" class="btn btn-default btnInput">查询</button>
+                    </form>
+                    <ul class="nav navbar-nav navbar-right navmore">
+                    	<li>
+                            <a href="goods.html" style="color:red;font-size: 1.2em;">我的订单</a>
+                        </li>
+                    	<li>
+                            <a href="#">
+                            	<input type="file" id="fileInput" style="display:none;">
+								<input id="img-upload" type="button"  accept="application/msword,text/plain" onclick="showFileInput()" value="投稿" >
+                            </a>
+                        </li>
+                        <li>
+                            <a href="login.html" style="color:rgb(39,40,34);font-size: 1.2em;">登录</a>
+                        </li>
+                        <li>
+                            <a href="register.html" style="color:rgb(39,40,34);font-size: 1.2em;">注册</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+        <div class="text">
+                 为学之道，莫先于穷理；穷理之要，必先于读书。 —— 朱熹
+        </div>
+    </div>
+    <div class="container" style="padding-top:21%;">
+		<div class="media col-md-12 " style="padding-bottom:2%;border-bottom: 5px solid #F0F0F0;-moz-border-bottom-colors: #555 #666 #777 #888 #999 #aaa #bbb #ccc;">
+		  <div class="media-left col-md-3">
+		    <a href="#">
+		      <img class="media-object" src="../photo/dear-poor.jpg" alt="...">
+		    </a>
+		  </div>
+		  <div class="media-body col-md-9"  style="padding-top:1%;">
+		    	<h3 class="media-heading" style="font-family:STSong; font-weight: 1000; padding-bottom:2%">富爸爸穷爸爸</h3>
+		    	<font style="color:#3478A5;font-size: 1.5em;">图书简介:</font>
+		    	<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp该书讲述了清崎有两个爸爸：“穷爸爸”是他的亲生父亲，一个高学历的教育官员；“富爸爸”是他好朋友的父亲，一个高中没毕业却善于投资理财的，清崎以亲身经历的财富故事展示了“穷爸爸”和“富爸爸”截然不同的金钱观和财富观穷人为钱工作，富人让钱为自己工作。</p>	
+		    	<font style="color: #FF2832;font-size: 1.5em;font-weight: bold;">￥35.5</font>
+		    	<a href="#" class="btn btn-primary collect" role="button" style="float: right;" onclick='remove(this);'>删除订单</a>
+                <a href="#" class="btn btn-default add" role="button"style="float: right;margin-right:2%">立即购买</a>
+		  </div>
+		</div>
+		
+		<div class="media col-md-12 " style="padding-bottom:2%;border-bottom: 5px solid #F0F0F0;-moz-border-bottom-colors: #555 #666 #777 #888 #999 #aaa #bbb #ccc;">
+		  <div class="media-left col-md-3">
+		    <a href="#">
+		      <img class="media-object" src="../photo/nopeo.jpg" alt="...">
+		    </a>
+		  </div>
+		  <div class="media-body col-md-9"  style="padding-top:1%;">
+		    <h3 class="media-heading" style="font-family:STSong; font-weight: 1000; padding-bottom:2%">无人生还</h3>
+		    	<font style="color:#3478A5;font-size: 1.5em;">图书简介:</font>
+		    	<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp个素不相识的人受邀来到海岛黑人岛上。他们抵达后，接待他们的却只是管家特夫妇俩。用晚餐的时候，餐厅里的留声机忽然响起，指控他们宾客以及管家夫妇这十人都曾犯有谋杀罪。众人正在惶恐之际，来宾之一忽然死亡，噩梦由此开始了。</p>	
+		    	<font style="color: #FF2832;font-size: 1.5em;font-weight: bold;">￥35.5</font>
+		    	<a href="#" class="btn btn-primary collect" role="button" style="float: right;">删除订单</a>
+                <a href="#" class="btn btn-default add" role="button"style="float: right;margin-right:2%">立即购买</a>
+		  </div>
+		</div>
+		<div class="media col-md-12 " style="padding-bottom:2%;border-bottom: 5px solid #F0F0F0;-moz-border-bottom-colors: #555 #666 #777 #888 #999 #aaa #bbb #ccc;">
+		  <div class="media-left col-md-3">
+		    <a href="#">
+		      <img class="media-object" src="../photo/nile.jpg" alt="...">
+		    </a>
+		  </div>
+		  <div class="media-body col-md-9"  style="padding-top:1%;">
+		    <h3 class="media-heading" style="font-family:STSong; font-weight: 1000; padding-bottom:2%">尼罗河上的惨案</h3>
+		    	<font style="color:#3478A5;font-size: 1.5em;">图书简介:</font>
+		    	<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp《尼罗河上的惨案》写持有万贯家财的林内特·里奇维小姐和她朋友杰奎琳·德·贝尔福特的恋人西蒙·道尔结婚了，他们乘坐由英国驶向埃及尼罗河的豪华游轮去度蜜月。这艘游艇上载着来自世界各地的豪绅、名媛、没落贵族……这本是一次迷人浪漫奢华的旅游，然而发生在游艇上的连环谋杀案使整条游船变成“死亡之旅”。</p>	
+		    	<font style="color: #FF2832;font-size: 1.5em;font-weight: bold;">￥35.5</font>
+		    	<a href="#" class="btn btn-primary collect" role="button" style="float: right;">删除订单</a>
+                <a href="#" class="btn btn-default add" role="button"style="float: right;margin-right:2%">立即购买</a>              
+		  </div>
+		</div>
+		
+    </div>
+	<div class="col-md-12 last">
+        <div class="row">
+            <div class="col-md-2 col-xs-6">
+                <ul class="list-unstyled">
+                    <li style="font-size:1.2em;color:rgb(248,248,242,0.8)">购物指南</li>
+                    <li><a href="#">购物流程</a></li>
+                    <li><a href="#">发票制度</a></li>
+                    <li><a href="#">账户管理</a></li>
+                    <li><a href="#">会员优惠</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-xs-6">
+                <ul class="list-unstyled">
+                    <li style="font-size:1.2em;color:rgb(248,248,242,0.8)">支付方式</li>
+                    <li><a href="#">货到付款</a></li>
+                    <li><a href="#">网上支付</a></li>
+                    <li><a href="#">礼品卡支付</a></li>
+                    <li><a href="#">银行转帐</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-xs-6">
+                <ul class="list-unstyled">
+                    <li style="font-size:1.2em;color:rgb(248,248,242,0.8)">订单服务</li>
+                    <li><a href="#">订单配送查询</a></li>
+                    <li><a href="#">订单状态说明</a></li>
+                    <li><a href="#">自助取消订单</a></li>
+                    <li><a href="#">自助修改订单</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-xs-6">
+                <ul class="list-unstyled">
+                    <li style="font-size:1.2em;color:rgb(248,248,242,0.8)">配送方式</li>
+                    <li><a href="#">配送范围及免邮标准</a></li>
+                    <li><a href="#">当日递/次日达</a></li>
+                    <li><a href="#">订单自提</a></li>
+                    <li><a href="#">验货与签收</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-xs-6">
+                <ul class="list-unstyled">
+                    <li style="font-size:1.2em;color:rgb(248,248,242,0.8)">退换货</li>
+                    <li><a href="#">退换货政策</a></li>
+                    <li><a href="#">自助申请退换货</a></li>
+                    <li><a href="#">退换货进度查询</a></li>
+                    <li><a href="#">退款方式和时间</a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-xs-6">
+                <ul class="list-unstyled">
+                    <li style="font-size:1.2em;color:rgb(248,248,242,0.8)">退换货</li>
+                    <li><a href="#">商家中心</a></li>
+                    <li><a href="#">运营服务</a></li>
+                    <li><a href="#">加入尾品汇</a></li>
+                </ul>
+            </div>
+        </div>
+		<div align="center" style="padding-top:20px;color:rgb(248,248,242,0.8)">
+			版权所有 © 2018 xatu w书城    瑞诺杯网页设计whale小组
+		</div>
+    </div>
+
+</body>
+<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script>
+//  var wid = $(".lists img").width();
+//  var term = 16 / 14;
+//  var hei = $(".lists img").width() * term;
+//  $(".lists img").css({
+//      "width": wid,
+//      "height": hei
+//  });
+	function remove(own){
+		var p = own.parentNode.parentNode;
+		var f = p.parentNode;
+		f.removeChild(p);
+	}
+</script>
+
+</html>
